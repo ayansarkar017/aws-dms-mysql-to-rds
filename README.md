@@ -2,7 +2,7 @@
 
 Step-by-step scripts, configs and a cutover runbook for migrating a MySQL database into Amazon RDS using AWS Database Migration Service, with ongoing replication so the source keeps serving traffic until cutover.
 
-Companion to my LinkedIn article: *Migrating a Database to Amazon RDS with AWS DMS: What I Learned* (link here).
+Companion to my LinkedIn article: *Migrating a Database to Amazon RDS with AWS DMS: What I Learned* (https://www.linkedin.com/pulse/migrating-database-amazon-rds-aws-dms-what-i-learned-ayan-sarkar-ncm3e).
 
 ## Architecture
 
