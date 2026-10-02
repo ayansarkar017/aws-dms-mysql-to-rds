@@ -1,0 +1,13 @@
+# Source MySQL settings required for AWS DMS CDC.
+# Add to the [mysqld] section of my.cnf on the source, then restart MySQL.
+# (RDS MySQL as source: set these in a custom DB parameter group instead.)
+
+[mysqld]
+server_id                 = 1            # any unique non-zero value
+log_bin                   = mysql-bin
+binlog_format             = ROW
+binlog_row_image          = FULL
+binlog_checksum           = NONE         # needed for older DMS engine versions; newer ones accept CRC32
+expire_logs_days          = 1            # MySQL 5.7; keep longer than the full load
+# binlog_expire_logs_seconds = 86400     # MySQL 8.x equivalent
+log_slave_updates         = ON           # only if the source is itself a replica

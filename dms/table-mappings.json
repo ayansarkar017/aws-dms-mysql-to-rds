@@ -1,0 +1,24 @@
+{
+  "rules": [
+    {
+      "rule-type": "selection",
+      "rule-id": "1",
+      "rule-name": "include-app-schema",
+      "object-locator": {
+        "schema-name": "your_database",
+        "table-name": "%"
+      },
+      "rule-action": "include"
+    },
+    {
+      "rule-type": "selection",
+      "rule-id": "2",
+      "rule-name": "exclude-temp-tables",
+      "object-locator": {
+        "schema-name": "your_database",
+        "table-name": "tmp_%"
+      },
+      "rule-action": "exclude"
+    }
+  ]
+}

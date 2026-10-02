@@ -1,0 +1,7 @@
+scripts/00-env.sh
+scripts/.ri_arn
+scripts/.src_arn
+scripts/.tgt_arn
+scripts/.task_arn
+*.log
+.DS_Store
